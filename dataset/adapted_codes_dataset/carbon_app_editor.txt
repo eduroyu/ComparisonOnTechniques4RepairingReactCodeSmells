@@ -1,0 +1,23 @@
+import React, { Component } from 'react';
+
+class Editor extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state =
+      {
+        ...DEFAULT_SETTINGS,
+        uploading: false,
+        code: props.content,
+        _initialState: this.props.initialState
+      }
+    )
+
+    componentDidMount() {
+        if (!this.state._initialState) {
+        const state = getState(localStorage)
+            if (state) {
+                this.setState(state)
+            }
+        }
+    }
+}
