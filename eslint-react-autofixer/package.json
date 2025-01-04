@@ -1,0 +1,39 @@
+{
+  "name": "eslint-react-autofixer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx jest --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.24.3",
+    "@babel/eslint-parser": "^7.23.10",
+    "@types/react": "^18.2.58",
+    "@typescript-eslint/eslint-plugin": "^7.0.2",
+    "@typescript-eslint/parser": "^7.0.2",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^8.57.0",
+    "mocha": "^10.3.0"
+  },
+  "type": "module",
+  "dependencies": {
+    "@babel/parser": "^7.24.1",
+    "@babel/preset-env": "^7.23.9",
+    "@babel/preset-react": "^7.23.3",
+    "@babel/register": "^7.23.7",
+    "@grafana/data": "^11.2.0",
+    "@grafana/ui": "^11.2.0",
+    "create-react-class": "^15.7.0",
+    "eslint-utils": "^3.0.0",
+    "esquery": "^1.5.0",
+    "grafana": "^1.0.1",
+    "nyc": "^15.1.0",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

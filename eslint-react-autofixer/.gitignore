@@ -1,0 +1,43 @@
+# Dependencias
+node_modules/
+
+# Archivos de configuración
+package-lock.json
+npm-debug.log
+
+# Ambientes de desarrollo
+.env
+.env.local
+.env.*.local
+
+# Archivos generados en el build
+/build
+/dist
+
+# Dependencias de TypeScript
+*.tsbuildinfo
+
+# Dependencias de Visual Studio Code
+.vscode/
+
+# Dependencias de WebStorm
+.idea/
+
+# Dependencias de Sublime Text
+.sublime-project
+.sublime-workspace
+
+# Logs
+logs/
+*.log
+
+# Dependencias de Yarn
+yarn-error.log
+yarn-debug.log*
+
+# Dependencias del editor de texto
+*.swp
+*~
+
+# Informes generados de jest coverage
+/coverage

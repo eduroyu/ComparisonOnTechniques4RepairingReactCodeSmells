@@ -1,0 +1,8 @@
+code
+"class Example extends React.Component { constructor(props) { super(props); this.state = { value: props.initialValue }; } render() { return <div>{this.state.value}</div>; } }"
+"class Example extends React.Component { constructor(props) { super(props); this.state = { value: this.props.initialValue }; } render() { return <div>{this.state.value}</div>; } }"
+"class Example extends React.Component { constructor(props) { super(props); this.state = { value: this.props.valueFromParent }; } render() { return <div>{this.state.value}</div>; } }"
+"class Example extends React.Component { constructor(props) { super(props); this.state = { value: this.props.initialValue }; } render() { return <div>{this.props.initialValue}</div>; } }"
+"class Example extends React.Component { constructor(props) { super(props); this.state = { value: this.props.valueFromParent }; } render() { return <div>{this.props.valueFromParent}</div>; } }"
+"class Example extends React.Component { constructor(props) { super(props); this.state = { value: "default" }; } render() { return <div>{this.state.value}</div>; } }"
+"class Example extends React.Component { constructor(props) { super(props); this.state = { value: "default" }; } render() { return <div>{this.props.initialValue}</div>; } }"

@@ -1,0 +1,13 @@
+code
+"class Example extends React.Component { 
+	constructor(props) { 
+		super(props); 
+		this.state = { 
+			value: props.initialValue 
+		}; 
+	} 
+	
+	render() { 
+		return <div>{this.state.value}</div>; 
+	} 
+}"
