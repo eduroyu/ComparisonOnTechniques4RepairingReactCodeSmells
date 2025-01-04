@@ -1,0 +1,15 @@
+import React, { Component } from 'react';
+
+class Vehicle extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            inputVal: props.inputVal,
+            plate: ""
+        };
+    }
+
+    render() {
+        return <div>{this.state.inputVal + this.state.plate}</div>;
+    }
+}

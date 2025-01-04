@@ -1,0 +1,16 @@
+// In this example there is no code smell at constructor(). No corrections are expected.
+
+import React, { Component } from 'react';
+
+class Vehicle extends Component {
+    constructor(props){
+        super(props)
+        this.state = {
+            plate: ""
+        }
+    }
+
+    render() {
+        return <div>{props.inputVal + this.state.plate}</div>;
+    }
+}

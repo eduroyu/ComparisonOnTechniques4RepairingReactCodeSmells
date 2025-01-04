@@ -1,0 +1,15 @@
+// In this example there is no code smell at getInitialState(). No corrections are expected.
+
+import React, { Component } from 'react';
+
+class Vehicle extends Component {
+    getInitialState(props) {
+        return {
+            plate: ""
+        };
+    }
+
+    render() {
+        return <div>{props.inputVal + this.state.plate}</div>;
+    }
+}

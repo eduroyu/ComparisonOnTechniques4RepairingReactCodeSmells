@@ -1,0 +1,26 @@
+import React, { Component } from 'react';
+
+class Subscription extends Component {
+    constructor(props) {
+        super(props);
+    }
+
+    renewSubscription = () => {
+        this.setState({
+            expirationDate: '2025-01-01',
+        });
+    };
+
+    render() {
+        return (
+            <div>
+                <h5>Subscription for {this.props.user}</h5>
+                <p>Plan: {this.props.plan}</p>
+                <p>Expires on: {this.props.expirationDate}</p>
+                <button onClick={this.renewSubscription}>Renew</button>
+            </div>
+        );
+    }
+}
+
+export default Subscription;

@@ -1,0 +1,30 @@
+import React, { Component } from 'react';
+
+class Post extends Component {
+    getInitialState(props) {
+        return {
+            title: props.title,
+            content: props.content,
+            likes: 0,
+        };
+    }
+
+    likePost = () => {
+        this.setState((prevState) => ({
+            likes: prevState.likes + 1,
+        }));
+    };
+
+    render() {
+        return (
+            <div>
+                <h1>{this.state.title}</h1>
+                <p>{this.state.content}</p>
+                <p>Likes: {this.state.likes}</p>
+                <button onClick={this.likePost}>Like</button>
+            </div>
+        );
+    }
+}
+
+export default Post;

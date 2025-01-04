@@ -1,0 +1,30 @@
+import React, { Component } from 'react';
+
+class Ticket extends Component {
+    getInitialState(props) {
+        return {
+            issue: props.issue,
+            assignedTo: props.assignedTo,
+            priority: props.priority || 'Medium',
+        };
+    }
+
+    escalatePriority = () => {
+        this.setState({ priority: 'High' });
+    };
+
+    render() {
+        return (
+            <div>
+                <h3>Issue: {this.state.issue}</h3>
+                <p>Assigned to: {this.state.assignedTo}</p>
+                <p>Priority: {this.state.priority}</p>
+                <button onClick={this.escalatePriority} disabled={this.state.priority === 'High'}>
+                    Escalate Priority
+                </button>
+            </div>
+        );
+    }
+}
+
+export default Ticket;

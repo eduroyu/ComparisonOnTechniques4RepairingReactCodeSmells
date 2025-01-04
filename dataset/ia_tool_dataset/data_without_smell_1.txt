@@ -1,0 +1,33 @@
+import React, { Component } from 'react';
+
+class Order extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            status: 'Processing',
+        };
+    }
+
+    markAsShipped = () => {
+        this.setState({ status: 'Shipped' });
+    };
+
+    render() {
+        return (
+            <div>
+                <h4>Order ID: {this.props.orderId}</h4>
+                <ul>
+                    {this.props.items.map((item, index) => (
+                        <li key={index}>{item}</li>
+                    ))}
+                </ul>
+                <p>Status: {this.state.status}</p>
+                <button onClick={this.markAsShipped} disabled={this.state.status === 'Shipped'}>
+                    Mark as Shipped
+                </button>
+            </div>
+        );
+    }
+}
+
+export default Order;

@@ -1,0 +1,23 @@
+import React, { Component } from 'react';
+
+class User extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            name: props.name,
+            email: props.email,
+            active: props.isActive
+        };
+    }
+
+    render() {
+        return (
+            <div>
+                <h1>User: {this.state.name}</h1>
+                <p>Email: {this.state.email}</p>
+                <p>Status: {this.state.active ? 'Active' : 'Inactive'}</p>
+                <button onClick={this.deactivateUser}>Deactivate</button>
+            </div>
+        );
+    }
+}

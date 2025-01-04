@@ -1,0 +1,17 @@
+// In this example the initialState is initialized using props but the state is not used.
+// Corrections are expected.
+
+import React, { Component } from 'react';
+
+class Vehicle extends Component {
+    getInitialState(props) {
+        return {
+            inputVal: this.props.inputVal,
+            plate: ""
+        };
+    }
+
+    render() {
+        return <div>{this.state.plate}</div>;
+    }
+}
